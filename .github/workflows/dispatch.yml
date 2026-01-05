@@ -1,0 +1,11 @@
+name: dispatch
+on:
+  push:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: placeholder
+        run: |
+          /bin/true
