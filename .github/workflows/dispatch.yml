@@ -1,6 +1,9 @@
 name: dispatch
 on:
-  push:
+  workflow_dispatch:
+    inputs:
+      key:
+        type: string
 
 jobs:
   placeholder:
@@ -8,4 +11,4 @@ jobs:
     steps:
       - name: placeholder
         run: |
-          /bin/true
+          echo "key: ${{ inputs.key }}"
